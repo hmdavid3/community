@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: #2c3439;
+}
+
+html {
+    color: #fffff0;
+    font-family: "click-clack", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+
+}
+
+.first {
+    font-size: 30px;
+    margin-left: 400px;
+    margin-top: 300px;
+    text-align: center;
+    line-height: 70px;
+    width: 50%;
+    padding: 10px;
+}
+
+#we {
+    transition-property: all;
+}
+
+#we:hover {
+    transform: translateX(-50px);
+}
+
+#good {
+    
+}
+
+/* keyframes */
