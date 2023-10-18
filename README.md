@@ -18,6 +18,8 @@ There are several hover animations on each line of text, but there are also diff
 
 "Ribs" by Lorde (https://youtu.be/b7pE8AG1jjE?si=xPRKgH7ST30hgs9Y)
 
+Typewriter Animation-CSS (https://youtu.be/w1nhwUGsG6M?si=zi2SF2LHbul8UMZ6)
+
 Flickering Glowing Text (https://codepen.io/7low/pen/VOBrpr)
 
 Neon Glow Text (https://codepen.io/FelixRilling/pen/oNNLMb)

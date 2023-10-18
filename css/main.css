@@ -1,7 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-    background-color: #2c3439;
 }
 
 html {
@@ -14,7 +13,7 @@ html {
 body {
   width: 100%;
   min-height: 100vh;
-
+  background-color: #2c3439;
 }
 
 /* fonts! 
@@ -27,38 +26,55 @@ body {
 */
 
 .first {
+    display: grid;
+    place-content: center;
+    text-align: center;
     font-size: 20px;
     margin-left: 400px;
     margin-top: 300px;
     margin-right: auto;
-    padding: 500;
-    text-align: center;
+    padding: 20px;
     line-height: 60px;
     width: 50%;
     padding: 10px;
 }
 
-.flex {
-    display: flex;
-    height: 5px;
-    margin-bottom: 90px;
+.oneanimation {
+  position: relative;
+  width: max-content;
 }
+
+.lineOne {
+ transform: translate(0, -30px);
+}
+
+.lineOne::before,
+.lineOne::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.lineOne::before {
+  background: #2c3439;
+  animation: typewriter 6s steps(30) 1s forwards;
+}
+
+.lineOne::after {
+  width: 0.125em;
+  background: whitesmoke;
+  animation: 
+    typewriter 6s steps(30) 1s forwards, blinky 750ms steps(30) infinite;
+}
+
 
 #dream {
     color: red;
-    transition-duration: 2s;
 }
 
-
-#dream:hover {
-    font-family: "yink", sans-serif;
-    font-weight: 800;
-    font-size: 60px;
-    font-style: normal;
-    color: lightyellow;
-    transform: scale(3,3) translate(-30px, 10px);
-    
-}
 
 #sweet {
     color: pink;
@@ -76,22 +92,65 @@ body {
 }
 
 .lineTwo {
-    font-size: 60px;
+    display: flex;
+    width: max-content;
+    height: max-content;
+    font-size: 20px;
+    opacity: 0;
+    transform: translateY(3rem);
+    animation: appear 5s ease 7s forwards;
 }
 
-.lineTwo:hover {
-    transform: rotate(360deg);
-}
-#reeling {
-    color: lightblue;
-    transition-duration: 3s;
-    transition-delay: 0s;
-    transition-timing-function: linear;
+
+.active {
+  margin: 10px 25px;
+  height: 50px;
+  overflow: hidden;
+  text-align: center;
 }
 
-#midnight {
-    animation: text-flicker 2s linear infinite;
-    /* animation: neon1 4s ease-in-out infinite alternate; */
+ul {
+  transform: translate(0, -17.5em);
+  animation: rolling 8s 1s ease-in-out forwards;
+}
+
+ul li {
+  list-style-type: none;
+  width: 100%;
+  height: 60px;
+  font-size: 2em;
+}
+
+.through {
+  width: max-content;
+}
+
+
+
+.midnight {
+    margin: 20px;
+    font-size: 50px;
+    opacity: 0;
+    animation-name: appear;
+    animation-delay: 10s;
+    animation-direction: forwards;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation: text-flicker 2s 10s linear infinite, neon1 4s 10s ease-in-out infinite alternate;
+  }
+
+.alone {
+  transform: translate(60px, 0);
+  animation: alone 5s ease-out forwards;
+}
+
+@keyframes alone {
+  from {
+    letter-spacing: normal;
+  }
+  to {
+    letter-spacing: 40px;
+  }
 }
 
 #old {
@@ -109,7 +168,7 @@ body {
 }
 
 /* keyframes */
-/* @keyframes neon1{
+@keyframes neon1{
     from {
         text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ffdd1b,
           0 0 70px #ffdd1b, 0 0 80px #ffdd1b, 0 0 100px #ffdd1b, 0 0 150px #ffdd1b;
@@ -118,7 +177,7 @@ body {
         text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ffdd1b,
           0 0 35px #ffdd1b, 0 0 40px #ffdd1b, 0 0 50px #ffdd1b, 0 0 75px #ffdd1b;
       }
-} */
+}
 @keyframes text-flicker {
     0% {
       opacity:0.1;
@@ -172,4 +231,54 @@ body {
       opacity:.9;
       text-shadow: 0px 0px 29px rgb(253,253,150)
     }
+  }
+
+  @keyframes typewriter {
+    to {
+      left: 100%;
+    }
+  }
+
+  @keyframes blinky {
+    to {
+      background: transparent;
+    }
+  }
+
+  @keyframes appear {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes rolling {
+    0% {
+      transform: translate(0, -17.5em);
+    }
+
+    16% {
+      transform: translate(0, -14.5em);
+    }
+
+    32% {
+      transform: translate(0, -14.5em);
+    }
+
+    48% {
+      transform: translate(0, -11.5em)
+    }
+
+    64% {
+      transform: translate(0, -8em);
+    }
+
+    80% {
+      transform: translate(0, -5em);
+    }
+
+    100% {
+      transform: translate(0, 0);
+    }
+
   }
