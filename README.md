@@ -4,7 +4,7 @@
 
 # project overview
 
-this website is a small embodiment of what community means to me through written, animated words and typography. The songs that I have used in this website is "Ribs" by Lorde. Although this song does not have strong implications of community at the surface, this song speaks to me personally about community and what it means to be within a community of people living life and growing old. I also have an emotional attachment to this song, and it was something that I listened to growing up in my own community. This song has some undertones of nostalgia and wishing to go back to how it was, but growing together and being supported by your own community can make something scary (like growing older) easier. 
+this website is a small embodiment of what community means to me through written, animated words and typography. The song that I have used in this website is "Ribs" by Lorde. Although this song does not have strong implications of community at the surface, this song speaks to me personally about community and what it means to be within a community of people living life and growing old. I also have an emotional attachment to this song, and it was something that I listened to growing up in my own community. This song has some undertones of nostalgia and wishing to go back to how it was, but growing together and being supported by your own community can make something scary (like growing older) easier. 
 
 Through this song, I was able to appreciate my community that is made up of people who continuously choose to be in my life, whom are also aging at the same rate as I am. 
 

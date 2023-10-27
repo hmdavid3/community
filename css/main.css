@@ -139,6 +139,15 @@ ul li {
     animation: text-flicker 2s 10s linear infinite, neon1 4s 10s ease-in-out infinite alternate;
   }
 
+  .lineThree {
+    opacity: 0;
+    animation-name: appear;
+    animation-delay: 12s;
+    animation-direction: forwards;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+  }
+
 .alone {
   transform: translate(60px, 0);
   animation: alone 5s ease-out forwards;
@@ -153,6 +162,14 @@ ul li {
   }
 }
 
+/* .lineFour {
+  opacity: 0;
+    animation-name: appear;
+    animation-delay: 10s;
+    animation-direction: forwards;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+} */
 #old {
     color: burlywood;
     opacity: 1;
