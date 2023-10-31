@@ -242,7 +242,6 @@ a:visited {
     100% {
         color: #8686fc;
         transform: rotate(360deg);
-        text-shadow:0px 0px 30px #feb95f;
         transition: all 2s ease-in-out;
     }
   }
