@@ -16,6 +16,10 @@ body {
   background-color: #2c3439;
 }
 
+a {
+  text-decoration: none;
+}
+
 /* fonts! 
     font-family: "click-clack", sans-serif;
     font-weight: 400;
@@ -72,7 +76,7 @@ body {
 
 
 #dream {
-    color: red;
+    color: lavender;
 }
 
 
@@ -82,13 +86,6 @@ body {
     transition-duration: 2s;
     transition-delay: 0s;
     transition-timing-function: ease-out;
-}
-
-#sweet:hover {
-    font-family: "yink", sans-serif;
-    font-weight: 800;
-    font-size: 60px;
-    font-style: normal;
 }
 
 .lineTwo {
@@ -139,60 +136,50 @@ ul li {
     animation: text-flicker 2s 10s linear infinite, neon1 4s 10s ease-in-out infinite alternate;
   }
 
-  .lineThree {
-    opacity: 0;
-    animation-name: appear;
-    animation-delay: 12s;
-    animation-direction: forwards;
-    animation-duration: 2s;
-    animation-timing-function: linear;
-  }
-
-.alone {
-  transform: translate(60px, 0);
-  animation: alone 5s ease-out forwards;
-}
-
-@keyframes alone {
-  from {
-    letter-spacing: normal;
-  }
-  to {
-    letter-spacing: 40px;
-  }
-}
-
-/* .lineFour {
+.lineThree {
+  display: flex;
+  width: max-content;
+  height: max-content;
+  font-size: 50px;
   opacity: 0;
-    animation-name: appear;
-    animation-delay: 10s;
-    animation-direction: forwards;
-    animation-duration: 4s;
-    animation-timing-function: linear;
-} */
+  animation: appear 7s ease 13s forwards;
+}
+
+  .alone {
+    transform: translate(60px, 0);
+    animation: alone 6s 15s ease-out forwards;
+  }
+
+.lineFour {
+  display: flex;
+  height: 5px;
+  width: max-content;
+  height: max-content;
+  font-size: 50px;
+  opacity: 0;
+  animation: appear 7s ease 17s forwards;
+}
 #old {
     color: burlywood;
     opacity: 1;
-    transition-property: opacity;
-    transition-duration: 2s;
-    transition-delay: 0s;
-    transition-timing-function: ease-in-out;
+    padding-left: 30px;
+    transition: all 0.5s ease-out;
 }
 
 #old:hover {
-    color: red;
-    opacity: 0;
+  opacity: 0;
+  margin-top: 30px;
 }
 
 /* keyframes */
 @keyframes neon1{
     from {
-        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ffdd1b,
-          0 0 70px #ffdd1b, 0 0 80px #ffdd1b, 0 0 100px #ffdd1b, 0 0 150px #ffdd1b;
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px red,
+          0 0 70px red, 0 0 80px red, 0 0 100px red, 0 0 150px red;
       }
       to {
-        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ffdd1b,
-          0 0 35px #ffdd1b, 0 0 40px #ffdd1b, 0 0 50px #ffdd1b, 0 0 75px #ffdd1b;
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px red,
+          0 0 35px red, 0 0 40px red, 0 0 50px red, 0 0 75px red;
       }
 }
 @keyframes text-flicker {
@@ -299,3 +286,30 @@ ul li {
     }
 
   }
+
+  @keyframes alone {
+    from {
+      letter-spacing: normal;
+    }
+    to {
+      letter-spacing: 20px;
+    }
+  }
+
+  /* @keyframes float {
+    0% {
+      -webkit-transform: translateY(0px);
+              transform: translateY(0px);
+      opacity: 1;
+    }
+    50% {
+      -webkit-transform: translateY(50px);
+              transform: translateY(50px);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: translateY(0px);
+              transform: translateY(0px);
+      opacity: 1;
+    }
+  } */
